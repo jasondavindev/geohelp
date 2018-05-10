@@ -22,7 +22,7 @@ if (!class_exists("Theme")) {
 
       if ($stmt->execute()) {
         while ($row = $this->fetch($stmt)) {
-          $name = $row["Tables_in_maps"];
+          $name = $row["Tables_in_".DATABASE];
 
           if (preg_match("/^tp_/", $name)) {
             $response[] = array(

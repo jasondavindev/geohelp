@@ -63,8 +63,8 @@
     </div>
   </div>
   <div id="content-flex"></div>
+  <script src="public/javascripts/controlmap.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF_pe4i4A9UlOu8u3u99GoJLDzhihpyZU&callback&callback&callback&callback=initMap&libraries=drawing"></script>
-  <script async defer src="public/javascripts/controlmap.min.js"></script>
   <script src="public/javascripts/jquery-3.2.1.min.js"></script>
   <script src="public/javascripts/home.min.js"></script>
 </body>

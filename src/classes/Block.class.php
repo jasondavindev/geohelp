@@ -34,10 +34,10 @@ if (!class_exists("Block")) {
       $response = array();
 
       if ($stmt->execute()) {
-        $fields = null;
+        $fields = array();
         
         while ($row = $this->fetch($stmt)) {
-          if ($fields === null) {
+          if (count($fields) === 0) {
             foreach($row as $name => $value) {
               if (preg_match("/^id_/", $name)) {
                 $fields[] = $name;
