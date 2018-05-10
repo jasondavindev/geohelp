@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333;
+  background-color: #fafafa;
+}
+ul {
+  list-style-type: none;
+}
+.bg-white {
+  background-color: #fff;
+}
+.container {
+  padding: 10px;
+}
+.box {
+  padding: 10px;
+  border: solid 1px #eee;
+}
+.btn {
+  min-width: 89px;
+  color: dodgerblue;
+  border: solid 1px dodgerblue;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 16px;
+  text-align: center;
+  padding: 4px 12px;
+  border-radius: 12px;
+  box-shadow: none;
+  outline: none;
+  transition: box-shadow 0.1s ease-in-out;
+  cursor: pointer;
+}
+.btn:active {
+  box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px dodgerblue;
+}
+.btn-circle {
+  min-width: 1%;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 8px!important;
+}
+.input-text {
+  padding: 5px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333;
+  border: none;
+  border-bottom: solid 2px #eee;
+  outline: none;
+}
+.input-text:focus {
+  border-color: dodgerblue;
+}
+.modal {
+  top: 0; left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.35);
+}
+.modal .modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+}
+.modal .form-modal {
+  padding: 20px;
+}
+.form-modal h2 {
+  margin: 10px 0;
+}
+.modal #close-modal {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+}
+/******************/
+/****** GRID ******/
+/******************/
+.row {
+  margin: 0 auto;
+  max-width: 1152px;
+}
+.row::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.cl-1 { width: 10%; }
+.cl-2 { width: 20%; }
+.cl-3 { width: 30%; }
+.cl-4 { width: 40%; }
+.cl-5 { width: 50%; }
+.cl-6 { width: 60%; }
+.cl-7 { width: 70%; }
+.cl-8 { width: 80%; }
+.cl-9 { width: 90%; }
+.cl-10 { width: 100%; }
+.gap-cl { padding: 10px; }
+
+[class*="cl-"] {
+  float: left;
+}
+
+@media only screen and (max-width: 600px) {
+  [class*="cl-"] {
+    width: 100%;
+  }
+}

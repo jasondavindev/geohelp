@@ -4,6 +4,5 @@ use maps;
 create table quadras
 (
 	idquadra INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    descricao VARCHAR(50) NOT NULL,
-    poligono VARCHAR(255) NOT NULL
+	poligono VARCHAR(255) NOT NULL
 ) ENGINE = InnoDB;
